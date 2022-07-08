@@ -22,7 +22,7 @@ resource "aws_db_instance" "microservice-db" {
 
 output "db_name" {
   value       = aws_db_instance.microservice-db.name
-  description = "Name of the instance"
+  description = "Name of the instance1"
 }
 
 output "db_username" {
