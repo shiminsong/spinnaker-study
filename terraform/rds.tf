@@ -13,7 +13,7 @@ resource "aws_db_instance" "microservice-db" {
   engine               = "mysql"
   engine_version       = "5.7"
   instance_class       = "db.t3.micro"
-  name                 = "${replace(var.team-name, "-", "")}db"
+  name                 = "${replace(var.db-name, "-", "")}db"
   username             = "admin"
   password             = "thermalsKeepMeWarm"
   parameter_group_name = "default.mysql5.7"
